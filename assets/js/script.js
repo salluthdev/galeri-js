@@ -1,4 +1,4 @@
 function ganti(angka){
-	var lokasi = 'assets/img/gambar-2.png';
+	var lokasi = 'assets/img/gambar-' + angka + '.png';
 	document.getElementById('gambar').src = lokasi;
 }

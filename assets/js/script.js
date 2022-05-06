@@ -1,3 +1,4 @@
-function ganti(){
-	document.getElementById('gambar').src = 'assets/img/gambar-2.png';
+function ganti(angka){
+	var lokasi = 'assets/img/gambar-2.png';
+	document.getElementById('gambar').src = lokasi;
 }

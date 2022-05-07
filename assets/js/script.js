@@ -1,9 +1,13 @@
 var nomor = 1;
+var caption = document.getElementById('caption');
+var text = ['', 'Footer Growthbar', 'Todo App Design in Pinterest', 'Todo App Design in Medium', 
+'Todo App Design in Collect UI', 'Todo JS'];
 
 function change(angka){
 	nomor = angka;
 	var lokasi = 'assets/img/gambar-' + angka + '.png';
 	document.getElementById('gambar').src = lokasi;
+	caption.innerHTML = text[angka];
 	return false;
 }
 
@@ -16,6 +20,7 @@ function prev(){
 
 	var lokasi = 'assets/img/gambar-' + nomor + '.png';
 	document.getElementById('gambar').src = lokasi;
+	caption.innerHTML = text[nomor];
 	return false;
 }
 
@@ -28,5 +33,6 @@ function next(){
 
 	var lokasi = 'assets/img/gambar-' + nomor + '.png';
 	document.getElementById('gambar').src = lokasi;
+	caption.innerHTML = text[nomor];
 	return false;
 }
